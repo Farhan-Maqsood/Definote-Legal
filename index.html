@@ -16,47 +16,37 @@
             color: #18243E;
             line-height: 1.6;
         }
-        @media (prefers-color-scheme: dark) {
-            body {
-                background: #161B26;
-                color: #F4EDDF;
-            }
-            .container {
-                background: #1E2433;
-            }
-            a {
-                color: #E47848;
-            }
-        }
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
             background: #FFFDF8;
+            color: #18243E;
             min-height: 100vh;
         }
         h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
-            color: #263862;
-        }
-        @media (prefers-color-scheme: dark) {
-            h1 {
-                color: #E47848;
-            }
+            color: #1B2A4A;
         }
         h2 {
             font-size: 1.8em;
             margin-top: 30px;
             margin-bottom: 15px;
+            color: #1B2A4A;
         }
         p {
             margin-bottom: 15px;
+            color: #18243E;
+        }
+        .lede {
+            font-size: 1.2em;
+            color: #3A4458;
         }
         a {
-            color: #263862;
+            color: #1B2A4A;
             text-decoration: none;
-            border-bottom: 2px solid #D26436;
+            border-bottom: 2px solid #C4522A;
         }
         a:hover {
             border-bottom-color: #E47848;
@@ -75,19 +65,54 @@
         }
         .feature {
             padding: 20px;
-            background: rgba(214, 100, 54, 0.1);
+            background: rgba(196, 82, 42, 0.12);
             border-radius: 12px;
         }
         .feature h3 {
             margin-bottom: 10px;
-            color: #D26436;
+            color: #A84322;
+        }
+        .feature p {
+            color: #18243E;
+        }
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 2px solid #C4522A;
+            font-size: 0.9em;
+            color: #3A4458;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #12161F;
+                color: #F7F1E8;
+            }
+            .container {
+                background: #1C2330;
+                color: #F7F1E8;
+            }
+            h1, h2, .feature h3 {
+                color: #F3B08A;
+            }
+            p, .feature p {
+                color: #F7F1E8;
+            }
+            .lede, footer {
+                color: #E4D9CC;
+            }
+            a {
+                color: #F3B08A;
+            }
+            .feature {
+                background: rgba(243, 176, 138, 0.14);
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Definote</h1>
-        <p style="font-size: 1.2em; color: #666;">Build your vocabulary, one puzzle at a time</p>
+        <p class="lede">Build your vocabulary, one puzzle at a time</p>
         
         <nav class="nav">
             <a href="privacy.html">Privacy Policy</a>
@@ -124,7 +149,7 @@
         <h2>Contact</h2>
         <p>Questions or feedback? Email us at <a href="mailto:purenesttech@gmail.com">purenesttech@gmail.com</a></p>
         
-        <footer style="margin-top: 60px; padding-top: 20px; border-top: 2px solid #D26436; font-size: 0.9em; color: #666;">
+        <footer>
             <p>&copy; 2026 Definote by PureNest. All rights reserved.</p>
         </footer>
     </div>
